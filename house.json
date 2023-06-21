@@ -1,0 +1,67 @@
+[ 
+    {
+    "type":"Studio Apartment",
+    "img":"https://i.ibb.co/j6X7zrc/images-1.jpg",
+    "size":"800 square feet",
+    "layout":"One-Bedroom: Open concept living and dining area, separate bedroom, one bathroom",
+    "price":"1200$"
+    
+    },
+    {
+    "type":"One-Bedroom Apartment",
+    "img":"https://i.ibb.co/qM6Wkmy/images.jpg",
+    "size":"800 square feet",
+    "layout":"Two-Bedroom: Spacious living room, kitchen with a breakfast nook, two bedrooms, two bathrooms",
+    "price":"1200$"
+    
+    },
+    {
+    "type":"Two-Bedroom Apartment",
+    "img":"https://i.ibb.co/TKsTm6q/modernhome.jpg",
+    "size":"1200 square feet",
+    "layout":"Two-Bedroom: Spacious living room, kitchen with a breakfast nook, two bedrooms, two bathrooms",
+    "price":"1200$"
+    
+    },
+    {
+    "type":"Duplex Apartment",
+    "img":"https://i.ibb.co/tMBmtRw/home-interior-768x508-1.webp",
+    "size":"800 square feet",
+    "layout":"Loft: Two levels, open living space with high ceilings, mezzanine bedroom, one or two bathrooms",
+    "price":"1200$"
+    
+    },
+    {
+    "type":"Penthouse Apartment",
+    "img":"https://i.ibb.co/HqtJRJd/hidden-gem-freehold-end-lot-2-1662443233-0ebc47b1-progressive.jpg",
+    "size":"2300 square feet",
+    "layout":": Two-floor unit, living room, dining area, kitchen on the lower level, bedrooms on the upper level, two or more bathrooms",
+    "price":"1200$"
+    
+    },
+    {
+    "type":"Loft Apartment",
+    "img":"https://i.ibb.co/Svz1jHN/beazy-p-MY1mpaa-UAs-unsplash.jpg",
+    "size":"8000 square feet",
+    "layout":": Two-floor unit, living room, dining area, kitchen on the lower level, bedrooms on the upper level, two or more bathrooms",
+    "price":"1200$"
+    
+    },
+    {
+    "type":"Condominium",
+    "img":"https://i.ibb.co/1mMwTZB/Bettina-Interior-06-Copy-2048x1365.jpg",
+    "size":"1300 square feet",
+    "layout":"Townhouse: Multi-level unit with living space on the lower level, bedrooms on the upper levels, two or more bathrooms",
+    "price":"1200$"
+    
+    },
+    {
+    "type":"Townhouse",
+    "img":"https://i.ibb.co/jTpGwvP/d46d4b59f5a973e63aa85128fa8a26d7-industrial-interior-design-industrial-interiors.jpg",
+    "size":"1400 square feet",
+    "layout":"Townhouse: Multi-level unit with living space on the lower level, bedrooms on the upper levels, two or more bathrooms",
+    "price":"1200$"
+    
+    }
+    
+]

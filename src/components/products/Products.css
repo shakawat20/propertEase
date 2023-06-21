@@ -1,0 +1,15 @@
+@media only screen and (max-width:695px) {
+    .service{
+    position: relative;
+    
+    left: -37px;
+  
+    display: flex;
+    width: 80%;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    }
+}

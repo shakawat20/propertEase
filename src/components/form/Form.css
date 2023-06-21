@@ -1,0 +1,32 @@
+@media only screen and (max-width:695px) {
+    .widthAdjust {
+        width: 80%;
+        position: relative;
+        width: 80%;
+        left: 45px;
+    }
+
+    #widthAdjust {
+       
+        margin-top: 30px;
+        position: relative;
+        width: 80%;
+        left: 3px;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 5px
+    }
+}
+
+@media only screen and (min-width:690px) {
+    #widthAdjust {
+       
+        margin-top: 30px;
+        width: 80%;
+        position: relative;
+        left: -30px;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 5px
+    }
+}

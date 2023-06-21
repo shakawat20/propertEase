@@ -1,0 +1,19 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+/* form{
+    border: 1px solid gray;
+} */
+form input{
+    height: 30px;
+    margin: 3px;
+    padding-left: 10px;
+    
+}
+/* form span{
+    display: inline;
+} */

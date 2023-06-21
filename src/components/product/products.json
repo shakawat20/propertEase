@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "img": "https://i.ibb.co/Svz1jHN/beazy-p-MY1mpaa-UAs-unsplash.jpg",
+        "title": "Villa on London",
+        "place": "London"
+    },
+    {
+        "id":2,
+        "img": "https://i.ibb.co/JsPWMdM/bernard-hermant-6ft-Zu-O-b64-unsplash-1.png",
+        "title": "Luxury house on chicago",
+        "place": "USA"
+    },
+    {
+        "id":3,
+        "img": "https://i.ibb.co/bH6xvH9/deborah-cortelazzi-g-REqu-CUXQLI-unsplash.jpg",
+        "title": "Beautiful house on LA",
+        "place": "London"
+    }
+]

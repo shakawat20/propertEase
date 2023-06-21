@@ -1,0 +1,10 @@
+form input{
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.386);;
+}
+.modal-border{
+    border: 5px solid rgba(255, 255, 255, 0.386);
+}
