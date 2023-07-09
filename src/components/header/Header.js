@@ -19,9 +19,9 @@ const Header = () => {
 
     const list = <>
         <li><Link to="/">Home</Link></li>
-        <li><Link>About Us</Link></li>
+        {/* <li><Link to="/about">About Us</Link></li> */}
         <li><Link to="/residences">Projects</Link></li>
-        <li><Link>Contact</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
 
 
         {admin && <li><Link to="/dashboard">admin</Link></li>}

@@ -1,6 +1,6 @@
 
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { Navigate, useLocation } from 'react-router-dom'
+import {useLocation, useNavigate } from 'react-router-dom'
 import auth from '../../firebase/firebase.init'
 import Loading from '../loading/Loading'
 
@@ -11,6 +11,7 @@ import Loading from '../loading/Loading'
 const RequireAuth = ({ children }) => {
     let location = useLocation()
     const [user, loading, error] = useAuthState(auth)
+    const navigate=useNavigate()
 
 
     if (loading) {
@@ -21,11 +22,13 @@ const RequireAuth = ({ children }) => {
     }
     else if (!user) {
 
-        return <Navigate to='/login' state={{ from: location }} />
+        navigate('/login', { state: { from: location }, replace: true })
+        // return <Navigate to='/login' state={{ from: location }} />
 
     }
 
 }
+export default RequireAuth;
 
 
 

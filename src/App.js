@@ -18,6 +18,10 @@ import MyBookings from './components/dashboardSection/myBookings/MyBookings';
 import UseAdmin from './hooks/UseAdmin';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from './firebase/firebase.init';
+import Contact from './components/contact/Contact';
+import About from './components/about/About';
+import RequireAuth from './components/requireAuth/RequireAuth'
+import Residence from './components/residences/Residence';
 
 
 
@@ -33,18 +37,24 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>} />
+        {/* <Route path="/residence" element={<Residence></Residence>}/> */}
 
-        <Route path='/login' element={<Login></Login>} />
+        <Route path="/login" element={<Login></Login>} />
 
         <Route path='/residences' element={<Residences home={home} setHome={setHome} project={project}></Residences>} />
 
         <Route path="/signup" element={<Signup></Signup>} />
-
+        <Route path="/contact" element={<Contact></Contact>}></Route>
+        {/* <Route path="/about" element={<About></About>}></Route> */}
         <Route path="/dashboard" element={<Dashboard></Dashboard>} >
 
           {/* <Route index element={<Orders></Orders>}></Route> */}
           {admin && <>
-            <Route index path='/dashboard' element={<Orders></Orders>}></Route>
+            <Route index path='/dashboard' element={
+
+              <Orders></Orders>
+
+            }></Route>
             <Route path='/dashboard/addService' element={<AddService setProject={setProject} ></AddService>}></Route>
             <Route path='/dashboard/addAdmin' element={<MakeAdmin></MakeAdmin>}></Route>
           </>}
@@ -53,7 +63,15 @@ function App() {
           {
             !admin &&
 
-            <Route index path='/dashboard' element={<MyBookings></MyBookings>}></Route>
+            <Route index path='/dashboard' element={
+              <RequireAuth>
+                <MyBookings></MyBookings>
+              </RequireAuth>
+            }
+
+            >
+
+            </Route>
           }
 
         </Route>

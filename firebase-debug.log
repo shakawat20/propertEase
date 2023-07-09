@@ -1,0 +1,33 @@
+[debug] [2023-07-09T14:28:28.373Z] ----------------------------------------------------------------------
+[debug] [2023-07-09T14:28:28.375Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-09T14:28:28.375Z] CLI Version:   12.4.3
+[debug] [2023-07-09T14:28:28.375Z] Platform:      win32
+[debug] [2023-07-09T14:28:28.376Z] Node Version:  v16.13.1
+[debug] [2023-07-09T14:28:28.376Z] Time:          Sun Jul 09 2023 20:28:28 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-07-09T14:28:28.376Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-09T14:28:28.453Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-09T14:28:28.453Z] > authorizing via signed-in user (shakawat.cse20@gmail.com)
+[debug] [2023-07-09T14:28:28.453Z] [iam] checking project propertease-11688 for permissions ["firebase.projects.get"]
+[debug] [2023-07-09T14:28:28.455Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/propertease-11688:testIamPermissions [none]
+[debug] [2023-07-09T14:28:28.455Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/propertease-11688:testIamPermissions x-goog-quota-user=projects/propertease-11688
+[debug] [2023-07-09T14:28:28.455Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/propertease-11688:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-09T14:28:30.103Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/propertease-11688:testIamPermissions 200
+[debug] [2023-07-09T14:28:30.104Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/propertease-11688:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-09T14:28:30.106Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688 [none]
+[debug] [2023-07-09T14:28:30.651Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688 200
+[debug] [2023-07-09T14:28:30.651Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688 {"projectId":"propertease-11688","projectNumber":"701941973419","displayName":"propertEase","name":"projects/propertease-11688","resources":{"hostingSite":"propertease-11688"},"state":"ACTIVE","etag":"1_32a2f479-8376-4c2d-9a19-90584916788d"}
+[info] 
+[info] === Serving from 'C:\Users\LENOVO\Desktop\serious-projects\propertease-client'...
+[info] 
+[debug] [2023-07-09T14:28:30.660Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/propertease-11688/sites 
+[debug] [2023-07-09T14:28:31.672Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/propertease-11688/sites 200
+[debug] [2023-07-09T14:28:31.673Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/propertease-11688/sites {"sites":[{"name":"projects/propertease-11688/sites/propertease-11688","defaultUrl":"https://propertease-11688.web.app","appId":"1:701941973419:web:ab1b6f985631e582bb92ee","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-09T14:28:31.673Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688/webApps/1:701941973419:web:ab1b6f985631e582bb92ee/config [none]
+[debug] [2023-07-09T14:28:33.371Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688/webApps/1:701941973419:web:ab1b6f985631e582bb92ee/config 200
+[debug] [2023-07-09T14:28:33.371Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688/webApps/1:701941973419:web:ab1b6f985631e582bb92ee/config {"projectId":"propertease-11688","appId":"1:701941973419:web:ab1b6f985631e582bb92ee","storageBucket":"propertease-11688.appspot.com","apiKey":"AIzaSyBdFvXuEOKR09FAYviv1iIOq3z1YgY_jvs","authDomain":"propertease-11688.firebaseapp.com","messagingSenderId":"701941973419"}
+[debug] [2023-07-09T14:28:33.376Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688 [none]
+[debug] [2023-07-09T14:28:34.297Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688 200
+[debug] [2023-07-09T14:28:34.297Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/propertease-11688 {"projectId":"propertease-11688","projectNumber":"701941973419","displayName":"propertEase","name":"projects/propertease-11688","resources":{"hostingSite":"propertease-11688"},"state":"ACTIVE","etag":"1_32a2f479-8376-4c2d-9a19-90584916788d"}
+[info] i  hosting[propertease-11688]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[propertease-11688]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}

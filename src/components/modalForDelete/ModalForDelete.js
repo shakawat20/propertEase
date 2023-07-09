@@ -1,9 +1,10 @@
 import React from 'react';
 
-const ModalForDelete = ({deleteResidence,setAfterDelete}) => {
 
+const ModalForDelete = ({deleteResidence,setAfterDelete}) => {
+ 
     const  removeFromList = () => {
-       
+  
 
         fetch(`https://regal-residence-server.vercel.app/residence/${deleteResidence._id}`, {
             method: 'DELETE',

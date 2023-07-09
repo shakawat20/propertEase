@@ -6,9 +6,12 @@ import googleIcon from '../../Regal Residence/Image_Icon/Icon/Group 573.png'
 
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
-
+import { useLocation } from 'react-router-dom';
 const Login = () => {
+    const location = useLocation();
+    console.log(location)
     const navigate = useNavigate()
+    let from = location.state?.from?.pathname || "/";
     const style = {
         border: "1px solid gray",
         padding: "8px",
@@ -44,7 +47,7 @@ const Login = () => {
                     lastName: Name[1],
                     email: email
                 }
-                 fetch('https://regal-residence-server-g1gkt4qs8-shakawat20.vercel.app/jwt', {
+                fetch('https://regal-residence-server-g1gkt4qs8-shakawat20.vercel.app/jwt', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -70,7 +73,13 @@ const Login = () => {
                     .then(res => res.json())
                     .then(data => {
                         console.log("apollo",data)
-                        navigate('/')
+                        if(from){
+                            navigate(from)
+                        }
+                        if(!from){
+                            navigate('/')
+                        }
+                        
                     })
 
 

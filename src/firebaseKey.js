@@ -1,10 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCJKsjaRJrrEcjK55HosKKJQ0i899NZ_Oc",
-  authDomain: "propertease-f9641.firebaseapp.com",
-  projectId: "propertease-f9641",
-  storageBucket: "propertease-f9641.appspot.com",
-  messagingSenderId: "118444252524",
-  appId: "1:118444252524:web:06abd74dbd9c864bbd2749"
+  apiKey: "AIzaSyBdFvXuEOKR09FAYviv1iIOq3z1YgY_jvs",
+  authDomain: "propertease-11688.firebaseapp.com",
+  projectId: "propertease-11688",
+  storageBucket: "propertease-11688.appspot.com",
+  messagingSenderId: "701941973419",
+  appId: "1:701941973419:web:ab1b6f985631e582bb92ee"
 };
+
 
   export default firebaseConfig

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Residence from './Residence';
 import Modal from '../modal/Modal';
-import { onAuthStateChanged } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import UseAdmin from '../../hooks/UseAdmin';
 import auth from '../../firebase/firebase.init';
@@ -18,8 +17,6 @@ const Residences = ({ setHome, home, project }) => {
 
     if (!afterDelete) {
         <Loading></Loading>
-
-
     }
 
 

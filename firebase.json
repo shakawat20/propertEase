@@ -1,7 +1,6 @@
 {
   "hosting": {
     "public": "build",
-    "site": "propertease",
     "ignore": [
       "firebase.json",
       "**/.*",
