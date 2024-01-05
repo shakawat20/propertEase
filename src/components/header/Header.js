@@ -19,13 +19,13 @@ const Header = () => {
 
     const list = <>
         <li><Link to="/">Home</Link></li>
-        {/* <li><Link to="/about">About Us</Link></li> */}
         <li><Link to="/residences">Projects</Link></li>
+        {!admin && <li><Link to="/dashboard">My orders</Link></li>}
         <li><Link to="/contact">Contact</Link></li>
-
+        <li><Link to="/about">About Us</Link></li>
 
         {admin && <li><Link to="/dashboard">admin</Link></li>}
-        {!admin && <li><Link to="/dashboard">my orders</Link></li>}
+        
     </>
     const logOut = () => {
         signOut()
@@ -35,7 +35,7 @@ const Header = () => {
 
 
     return (
-        <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+        <div style={{ marginLeft: "20px", marginRight: "20px" ,position:"sticky",top:0 }}>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -46,7 +46,7 @@ const Header = () => {
                             {list}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">PropertEase</a>
+                    <Link to="/" className="btn btn-ghost normal-case text-xl">PropertEase</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

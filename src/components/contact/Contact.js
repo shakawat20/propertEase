@@ -40,7 +40,7 @@ const Contact = () => {
                 <div>
                     <input placeholder='Name' className="input border border-gray-300 lg:w-full mt-3 mr-3 max-w-xs "  {...register("name")} />
                     <input placeholder='Email' className="input border border-gray-300 lg:w-full mt-3 max-w-xs "  {...register("email")} />
-                    <input placeholder='Message' className="input border border-gray-300 lg:w-full mt-3 max-w-xs h-40"  {...register("message")} />
+                    <input placeholder='Message' className="input border border-gray-300 lg:w-full mt-3  max-w-xs h-40"  {...register("message")} />
 
                     <input className="block btn mt-3" type="submit" />
                 </div>

@@ -4,21 +4,19 @@ import loading from '../../loading/Loading'
 
 import { CardElement, useStripe, useElements, } from '@stripe/react-stripe-js';
 import Loading from '../../loading/Loading';
-
-const CheckoutForm = ({ clientSecret, information,setSuccess,success,setTransaction,transaction}) => {
+import { ToastContainer, toast } from 'react-toastify';
+const CheckoutForm = ({ clientSecret, info, setSuccess, success, setTransaction, transaction }) => {
+  const paymentConfirmation = () => toast("payment done");
 
 
   const stripe = useStripe();
   const elements = useElements();
-  
+
 
 
 
   const [cardError, setCardError] = useState('')
   const [errorMessage, setErrorMessage] = useState(null);
-
-
-
 
 
   const handleSubmit = async (event) => {
@@ -57,7 +55,7 @@ const CheckoutForm = ({ clientSecret, information,setSuccess,success,setTransact
         payment_method: {
           card: card,
           billing_details: {
-            email: information.email,
+            email: info.email,
           },
         },
       },
@@ -71,14 +69,16 @@ const CheckoutForm = ({ clientSecret, information,setSuccess,success,setTransact
       fetch('https://regal-residence-server.vercel.app/orders', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(information)
+        body: JSON.stringify(info)
       })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+          paymentConfirmation()
+        })
 
 
     }
-    
+
   };
 
   return (
@@ -113,12 +113,12 @@ const CheckoutForm = ({ clientSecret, information,setSuccess,success,setTransact
         {errorMessage && <div>{cardError}</div>}
       </form>
       {
-        success && 
-        <p className='text-green-500'>{success}</p> 
+        success &&
+        <p className='text-green-500'>{success}</p>
 
       }
       {
-          success && <p className='text-green-500'>{transaction}</p>
+        success && <p className='text-green-500'>{transaction}</p>
       }
     </>
 

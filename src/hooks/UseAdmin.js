@@ -1,36 +1,8 @@
-// import  { useEffect, useState } from 'react';
-
-// const UseAdmin = (user) => {
-//     const [admin,setAdmin]=useState(false)
-//     const [adminLoading,setAdminLoading]=useState(true)
-//     useEffect(() => {
-//         const email = user?.email
-//         fetch(`https://regal-residence-server.vercel.app/admin/${email}`,{
-
-//         method:'GET',
-//         headers:{
-//             'content-type':'application/json',
-            
-//         },
-//         })
-//         .then(res=>res.json())
-//         .then(data=>{
-           
-//             setAdmin(data.admin)
-//             setAdminLoading(false)
-//              console.log("this",data.admin)
-//         })
-//     }, [user])
-
-//     return [admin,adminLoading]
-// };
-
-// export default UseAdmin;
 import { useEffect, useState } from 'react';
 
 const UseAdmin = (user) => {
   const [admin, setAdmin] = useState(false);
-  const [adminLoading, setAdminLoading] = useState(true);
+  const [adminLoading, setAdminLoading] = useState(true);  
 
   useEffect(() => {
     const fetchAdminStatus = async () => {

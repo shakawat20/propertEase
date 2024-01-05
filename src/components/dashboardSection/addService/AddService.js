@@ -6,14 +6,11 @@ import { useForm } from 'react-hook-form';
 const AddService = ({ setProject }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-    const imageStorageKey = 'd138191a0952e9c79b428fb2e17503ed'
-    // Handle input changes
 
-
-    // Handle form submission
     const onSubmit = async data => {
+        console.log(data)
 
-
+        const imageStorageKey = 'b728bf91428c21f77d164f1426edf9be'
         const image = data.file[0]
 
 
@@ -39,7 +36,7 @@ const AddService = ({ setProject }) => {
                         type: data?.title,
                         layout: data?.layout,
                         img: img,
-                        price:data?.price
+                        price: data?.price
                     }
                     fetch('https://regal-residence-server.vercel.app/residence', {
                         method: 'POST',
@@ -53,9 +50,6 @@ const AddService = ({ setProject }) => {
                         .then(data => setProject(data))
 
                 }
-
-
-
 
             })
         reset()
@@ -113,7 +107,7 @@ const AddService = ({ setProject }) => {
 
                 </div>
 
-                <div  style={{ marginBottom: '10px', display: "inline", position: "relative", left: "-96px" }}>
+                <div style={{ marginBottom: '10px', display: "inline", position: "relative", left: "-96px" }}>
                     <label htmlFor="size" style={{ display: 'block', marginBottom: '5px' }}>
                         size:
                     </label>
@@ -122,7 +116,7 @@ const AddService = ({ setProject }) => {
                         type="text" id="size" {...register('size')}
                     />
                 </div>
-                <div  style={{ marginBottom: '10px', display: "inline", position: "relative", left: "-96px" }}>
+                <div style={{ marginBottom: '10px', display: "inline", position: "relative", left: "-96px" }}>
                     <label htmlFor="size" style={{ display: 'block', marginBottom: '5px' }}>
                         price
                     </label>

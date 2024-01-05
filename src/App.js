@@ -22,6 +22,7 @@ import Contact from './components/contact/Contact';
 import About from './components/about/About';
 import RequireAuth from './components/requireAuth/RequireAuth'
 import Residence from './components/residences/Residence';
+import Feedback from './components/dashboardSection/feedback/Feedback';
 
 
 
@@ -45,33 +46,21 @@ function App() {
 
         <Route path="/signup" element={<Signup></Signup>} />
         <Route path="/contact" element={<Contact></Contact>}></Route>
-        {/* <Route path="/about" element={<About></About>}></Route> */}
+        <Route path="/about" element={<About></About>}></Route>
         <Route path="/dashboard" element={<Dashboard></Dashboard>} >
 
-          {/* <Route index element={<Orders></Orders>}></Route> */}
           {admin && <>
-            <Route index path='/dashboard' element={
-
-              <Orders></Orders>
-
-            }></Route>
+            <Route index path='/dashboard' element={<Orders></Orders>}></Route>
             <Route path='/dashboard/addService' element={<AddService setProject={setProject} ></AddService>}></Route>
             <Route path='/dashboard/addAdmin' element={<MakeAdmin></MakeAdmin>}></Route>
           </>}
 
-
           {
-            !admin &&
+            !admin && <>
+              <Route  path='/dashboard' element={<RequireAuth><MyBookings></MyBookings></RequireAuth>} > </Route>
+              <Route path='/dashboard/feedback' element={<RequireAuth><Feedback></Feedback></RequireAuth>} > </Route>
+            </>
 
-            <Route index path='/dashboard' element={
-              <RequireAuth>
-                <MyBookings></MyBookings>
-              </RequireAuth>
-            }
-
-            >
-
-            </Route>
           }
 
         </Route>

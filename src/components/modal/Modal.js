@@ -6,12 +6,13 @@ import './Modal.css'
 // import { useState } from 'react';
 // import { useEffect } from 'react';
 import UseAdmin from '../../hooks/UseAdmin';
+import { toast } from 'react-toastify';
 
 const Modal = ({ home }) => {
     // const [booking, setBooking] = useState({})
     // const [mode, setMode] = useState(false)
 
-
+    const notify = () => toast("Added to my orders!");
 
     const currentDate = new Date().toDateString();
     const { register, handleSubmit, setValue, reset } = useForm();
@@ -42,7 +43,9 @@ const Modal = ({ home }) => {
 
         })
             .then(data => data.json())
-            .then(res => console.log(res))
+            .then(res => {
+                notify()
+                console.log(res)})
 
         // setBooking(bookingInfo)
         // console.log(booking)

@@ -7,7 +7,12 @@ import Login from '../login/Login';
 
 
 
+
 const Residence = ({ residence, setHome, setDeleteResidence, admin }) => {
+
+   
+
+
 const navigate=useNavigate()
     let location = useLocation();
     const [user, loading, error] = useAuthState(auth);
@@ -22,7 +27,11 @@ const navigate=useNavigate()
         } else {
           // Call the setHome function for admins
           setHome(residence);
+         
         }
+
+
+
       };
 
 

@@ -3,7 +3,8 @@ import Form from '../form/Form';
 import Header from '../header/Header';
 import Products from '../products/Products';
 import Testimonials from '../testimonials/Testimonials';
-import img1 from '../../Regal Residence/Image_Icon/Image/pierre-chatel-innocenti-AlSlE8IAjZo-unsplash 1.png'
+import img1 from '../../Regal Residence/Image_Icon/Image/pierre-chatel.jpg'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -12,9 +13,9 @@ const Home = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={img1} className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
+                        <h1 className="text-5xl font-bold">Welcome to propertEase</h1>
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi <br /> exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Booking</button>
+                        <button className="btn btn-primary"><Link to="/residences">Booking</Link></button>
                     </div>
                 </div>
             </div>

@@ -35,7 +35,14 @@ const Dashboard = () => {
                                         <li><Link to="/dashboard/addAdmin">Add admin</Link></li>
                                     </>
                                 )}
-                                {!admin && <li><Link to="/dashboard">My Bookings</Link></li>}
+                                {!admin && <>
+
+                                    {/* <li><Link to="/dashboard">Reserve</Link></li> */}
+                                    <li><Link to="/dashboard">My Reservations</Link></li>
+                                    <li><Link to="/dashboard/feedback">Feedback</Link></li>
+
+
+                                </>}
                             </>
                         )}
 

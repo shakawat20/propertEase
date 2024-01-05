@@ -56,7 +56,7 @@ const Products = () => {
         },
         {
             id: 2,
-            img: "https://i.ibb.co/JsPWMdM/bernard-hermant-6ft-Zu-O-b64-unsplash-1.png",
+            img: "https://i.ibb.co/DCzHdVC/download.jpg",
             title: "Luxury house on chicago",
             place: "USA"
         },
