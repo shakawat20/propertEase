@@ -171,12 +171,12 @@ const Login = () => {
                 <h1 style={{ textAlign: "center", marginBottom: "10px", fontSize: "30px" }}>LogIn with Google</h1>
                 <div style={style}>
                     <img src={googleIcon} style={{ height: "20px", width: "20px", display: "inline" }} alt="" />
-                    <button style={{ paddingRight: "35px" }} onClick={signIn}>signInWithGoogle</button>
+                    <button style={{ paddingRight: "35px",color:"black" }} onClick={signIn}>signInWithGoogle</button>
                 </div>
 
             </div>
             <div style={{ textAlign: "center" }}>or</div>
-            <Link className='btn' to="/signup">create an account</Link>
+            <Link className=' btn  bg-white text-black hover:bg-white' to="/signup">create an account</Link>
 
         </div>
 

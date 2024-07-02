@@ -59,7 +59,7 @@ const Modal = ({ home }) => {
 
 
     return (
-        <div className='w-11/12 max-w-5xl' >
+        <div className='w-11/12 max-w-5xl bg-white' >
 
 
             {/* Put this part before </body> tag */}
@@ -68,20 +68,20 @@ const Modal = ({ home }) => {
             <input type="checkbox" id="my-modal-4" className="modal-toggle" />
 
             <label htmlFor="my-modal-4" className="modal cursor-pointer"  >
-                <label className="modal-box relative modal-border" htmlFor="" >
+                <label className="modal-box relative modal-border bg-white" htmlFor="" >
 
                     <label htmlFor="">
                         {
                             <h1 style={{ padding: "8px", display: "flex", justifyContent: 'center', fontWeight: "bold" }}>{home.type}</h1>
                         }
                     </label>
-                    <form style={{ display: "flex", justifyContent: "center" }} onSubmit={handleSubmit(onSubmit)}>
-                        <label htmlFor="my-modal-4" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                        <input value={currentDate} {...register("date")} />
-                        <input value={user?.displayName} {...register("name")} />
-                        <input value={user?.email} {...register("email")} />
-                        <input value={home.price} {...register("price")} />
-                        <input placeholder='Phone number' {...register("phone")} />
+                    <form style={{ display: "flex", justifyContent: "center",color:"black" }} onSubmit={handleSubmit(onSubmit)}>
+                        <label htmlFor="my-modal-4" className="btn btn-sm btn-circle absolute right-2 top-2 bg-white text-black">✕</label>
+                        <input className='bg-white' style={{border:"2px solid black",borderRadius:"3px"}}  value={currentDate} {...register("date")} />
+                        <input className='bg-white' style={{border:"2px solid black",borderRadius:"3px"}}  value={user?.displayName} {...register("name")} />
+                        <input className='bg-white' style={{border:"2px solid black",borderRadius:"3px"}}  value={user?.email} {...register("email")} />
+                        <input className='bg-white' style={{border:"2px solid black",borderRadius:"3px"}} value={home.price} {...register("price")} />
+                        <input className='bg-white'style={{border:"2px solid black",borderRadius:"3px"}} placeholder='Phone number' {...register("phone")} />
 
                         <button type='input' value='input' ><label htmlFor='my-modal-4' className="btn modal-action">Submit</label></button>
 

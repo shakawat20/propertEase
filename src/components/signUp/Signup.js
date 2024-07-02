@@ -97,30 +97,30 @@ const Signup = () => {
     //     .then(data => console.log(data))
     // },[])
     return (
-        <div>
+        <div className='text-black'>
             <h1 style={{ textAlign: "center", marginTop: "10px", marginBottom: "5px" }}>Sign Up</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div style={style}>
-                    <label htmlFor="firstName">First Name:</label>
-                    <input id='firstName' placeholder='First Name'  {...register("FirstName")} />
+                <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
+                    <label className=' text-black'  htmlFor="firstName">First Name:</label>
+                    <input id='firstName' style={{border:"2px solid black"}} className='bg-white border-rounded' placeholder='First lllName'  {...register("FirstName")} />
                 </div>
-                <div style={style}>
-                    <label htmlFor="lastName"> <span>Last Name:</span></label>
-                    <input id='lastName' placeholder='Last Name' {...register("LastName")} />
-                </div>
-
-                <div style={style}>
-                    <label htmlFor="email"> <span>Email:</span> </label>
-                    <input id='email' placeholder='Username or Email' {...register("email")} />
+                <div className='bg-white text-white' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
+                    <label className=' text-black'  htmlFor="lastName"> <span>Last Name:</span></label>
+                    <input id='lastName' style={{border:"2px solid black"}} className='bg-white ' placeholder='Last Name' {...register("LastName")} />
                 </div>
 
-                <div style={style}>
-                    <label htmlFor="password"> <span>Password:</span></label>
-                    <input id='password' placeholder='Password' {...register("password")} />
+                <div className='bg-white text-white' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
+                    <label className=' text-black' htmlFor="email"> <span>Email:</span> </label>
+                    <input id='email' className='bg-white' style={{border:"2px solid black"}} placeholder='Username or Email' {...register("email")} />
                 </div>
-                <div style={style}>
+
+                <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
+                    <label  htmlFor="password"> <span>Password:</span></label>
+                    <input id='password' className='bg-white text-black border-2px' style={{border:"2px solid black"}} placeholder='Password' {...register("password")} />
+                </div>
+                <div className='bg-white text-black ' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
                     <label htmlFor="confirmPassword"> <span>Confirm Password:</span> </label>
-                    <input id='confirmPassword' placeholder='Confirm Password' {...register("confirmPassword")} />
+                    <input id='confirmPassword' className='bg-white ' style={{border:"2px solid black"}}  placeholder='Confirm Password' {...register("confirmPassword")} />
                 </div>
 
 
@@ -129,7 +129,7 @@ const Signup = () => {
 
                 {errors.exampleRequired && <span>This field is required</span>}
 
-                <input className='btn' type="submit" />
+                <input className='btn text-black-600 bg-white hover:bg-white' type="submit" />
             </form>
         </div>
 

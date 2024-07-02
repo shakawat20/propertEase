@@ -7,7 +7,7 @@ const Product = ({ title, img, place }) => {
             <img src={img} alt="" style={{ height: '375px', width: '377px' }} />
             <header><h1 className='font-bold text-3xl '>{title}</h1></header>
             <div className='flex items-center justify-center'> 
-                <img height={"20px"} width={"20px"} src={img1} alt="" />
+            <i class="fa-solid fa-location-dot"></i>
                 <h4 style={{padding:"7px"}} className='font-thin'>{place}</h4>
             </div>
 

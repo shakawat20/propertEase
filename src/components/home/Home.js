@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
-            <div className="hero min-h-screen bg-base-200">
+        <div style={{backgroundColor:"white",color:"black"}}>
+            <div className="hero min-h-screen " >
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={img1} className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
@@ -23,7 +23,7 @@ const Home = () => {
             <Testimonials></Testimonials>
             <div className='bg-base-200'>
                
-                <div className='flex justify-center '>
+                <div className='flex justify-center bg-white '>
                     <Form></Form>
                 </div>
 

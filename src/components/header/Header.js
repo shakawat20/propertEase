@@ -35,8 +35,8 @@ const Header = () => {
 
 
     return (
-        <div style={{ marginLeft: "20px", marginRight: "20px" ,position:"sticky",top:0 }}>
-            <div className="navbar bg-base-100">
+        <div   style={{ marginLeft: "20px", marginRight: "20px" ,position:"sticky",top:0,zIndex:100,color:"black" }}>
+            <div className="navbar ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -59,7 +59,7 @@ const Header = () => {
                 <div className="navbar-end">
                     {/* 
                    { user ? <Link className='btn' to="/login">LogIn</Link>} */}
-                    {user ? <button className="btn btn-ghost" onClick={()=>logOut()}>signOut</button> : <Link className='btn' to="/login">LogIn</Link>}
+                    {user ? <button className="btn btn-ghost bg-white text-black" onClick={()=>logOut()}>signOut</button> : <Link className='btn btn-ghost bg-white text-black' to="/login">LogIn</Link>}
 
                 </div>
             </div>

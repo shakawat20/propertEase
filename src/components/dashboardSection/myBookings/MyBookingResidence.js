@@ -9,7 +9,7 @@ const MyBookingResidence = ({ type, price, email, _id,handleRemove ,name,setInfo
 
     return (
         <div>
-            <div className="card w-25 bg-base-100 shadow-xl">
+            <div className="card w-25 bg-white border-black text-black shadow-xl">
                 {/* <label type="button" onClick={handleRxmove} className='btn'> x</label> */}
                 <div style={{textAlign:"end"}}> <button style={{marginRight:"8px",marginTop:"10px",width:"29px",borderRadius:"5px",border:"1px solid gray"}}  onClick={()=>handleRemove(_id)} >x</button></div>
                
@@ -20,7 +20,7 @@ const MyBookingResidence = ({ type, price, email, _id,handleRemove ,name,setInfo
 
 
                     <div className="card-actions justify-end">
-                        <label htmlFor="my-modal" onClick={() => setInfo( {price, email, type,name} )} className="btn">pay</label>
+                        <label htmlFor="my-modal" onClick={() => setInfo( {price, email, type,name} )} className="btn text-black bg-white hover:bg-white">pay</label>
                     </div>
                 </div>
             </div>

@@ -78,10 +78,10 @@ const Products = () => {
 
 
     return (
-        <div style={{ marginTop: "30px" }} >
+        <div style={{ marginTop: "30px",backgroundColor:"white",color:"black" }} >
 
             <h1 className='font-bold text-3xl' style={{ textAlign: "center" }}>Discover the latest interior Design <br /> available today</h1>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1" style={{ width: "100%" }}>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1" style={{ width: "100%",backgroundColor:"white" }}>
 
 
                 {
@@ -89,7 +89,7 @@ const Products = () => {
                 }
 
             </div>
-            <div className='bg-base-200'>
+            <div className='bg-red-[#121314]'>
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: 'center' }}>
                     <h1 className='font-bold text-3xl' style={{ textAlign: "center", marginTop: "45px" }}>We're an agency tailored to all <br /> client's needs that always delivers </h1>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 service" style={{ marginTop: "20px", marginLeft: "65px" }}>
@@ -101,7 +101,7 @@ const Products = () => {
                 </div>
 
                 <div style={{ display: "flex", justifyContent: "center", marginTop: "25px" }}><button style={{
-                    backgroundColor: `#251D58`, borderRadius: "5px", padding: "5px", height: "50px", width: "170px", marginBottom: "10px"
+                    backgroundColor: `white`, borderRadius: "5px", padding: "5px", height: "50px", width: "170px", marginBottom: "10px",border:"2px solid black"
                 }}>Explore More</button></div>
 
             </div>

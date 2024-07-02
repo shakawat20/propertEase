@@ -23,6 +23,10 @@ const Residences = ({ setHome, home, project }) => {
     if (!afterDelete) {
         <Loading></Loading>
     }
+    if(!residences){
+        <Loading></Loading>
+        // <span className="loading loading-spinner loading-lg"></span>
+    }
 
 
     useEffect(() => {

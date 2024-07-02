@@ -37,8 +37,8 @@ const navigate=useNavigate()
 
 
     return (
-        <div style={{ width: "90%" }}>
-            <div className="card w-70 bg-base-100 shadow-xl cardX">
+        <div className='bg-white text-black' style={{ width: "90%" }}>
+            <div className="card w-70 bg-white  text-black shadow-xl " style={{border:"3px solid black"}}>
 
                 <figure className="px-10 pt-10">
                     <img style={{ height: "300px", width: "400px" }} src={residence.img} alt="Shoes" className="rounded-xl" />
@@ -49,8 +49,8 @@ const navigate=useNavigate()
                     <h2 style={{fontSize:"1.5rem"}}>{residence.price}$</h2>
                     <div className="card-actions">
                         {
-                            admin ? <label htmlFor="my-modal" onClick={() => setDeleteResidence(residence)} className="btn">Remove</label> :
-                                <label htmlFor="my-modal-4" onClick={handleAddToBookingList} className="btn">Add to booking list</label>
+                            admin ? <label htmlFor="my-modal" onClick={() => setDeleteResidence(residence)} className="btn bg-white text-black">Remove</label> :
+                                <label htmlFor="my-modal-4" onClick={handleAddToBookingList} className="btn bg-white text-black hover:bg-white">Add to booking list</label>
                         }
 
                     </div>

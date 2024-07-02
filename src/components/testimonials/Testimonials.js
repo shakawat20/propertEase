@@ -30,7 +30,7 @@ const Testimonials = () => {
 
     ]
     return (
-        <div className='flex flex-col  justify-center items-center '>
+        <div className='flex flex-col  justify-center items-center bg-white '>
             <h1 style={{textAlign:"center",fontSize:"40px",marginTop:"10px",marginBottom:"20px",fontWeight:"bold"} }>Testimonials</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" style={{marginTop:"20px"}}>
                 {

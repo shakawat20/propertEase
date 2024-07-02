@@ -36,17 +36,17 @@ const Payment = ({ info }) => {
 
     return (
         <div>
-            <ToastContainer theme="dark"/>
+            <ToastContainer theme="white"/>
 
             <input type="checkbox" id="my-modal" className="modal-toggle" />
 
-            <div className="modal">
-                <div className='modal-box'>
+            <div className="modal ">
+                <div className='modal-box bg-white '>
                     <label htmlFor="my-modal" onClick={() => {
                         setSuccess('')
                         setTransaction('')
 
-                    }} className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    }} className="btn btn-sm btn-circle absolute right-2 top-2" style={{backgroundColor:"white",color:"black"}}>✕</label>
 
                     <Elements stripe={stripePromise} >
                         <CheckoutForm info={info} success={success} setSuccess={setSuccess} clientSecret={clientSecret} setTransaction={setTransaction} transaction={transaction} />

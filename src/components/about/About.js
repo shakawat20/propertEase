@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="bg-gray-900 text-white p-8 text-center">
-            <h1 className="text-3xl font-semibold text-indigo-700 mb-4">About propertEase</h1>
+        <div className="bg-gray-900 text-black bg-white p-8 text-center">
+            <h1 className="text-3xl font-semibold text-black mb-4">About propertEase</h1>
             <p className="text-lg">
                 At propertEase, we pride ourselves on delivering a seamless and personalized experience to our valued clients. Our team of experienced professionals is dedicated to understanding your unique needs and helping you navigate the complex world of real estate with ease.
             </p>
