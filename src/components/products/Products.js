@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../product/Product';
-import residentialHome from '../../Regal Residence/Image_Icon/Icon/residential-home.png'
-import showroom from '../../Regal Residence/Image_Icon/Icon/showroom.png'
-import interiorDesign from '../../Regal Residence/Image_Icon/Icon/interiorIcon.avif'
+import residentialHome from '../Regal Residence/Image_Icon/Icon/residential-home.png'
+import showroom from '../Regal Residence/Image_Icon/Icon/showroom.png'
+import interiorDesign from '../Regal Residence/Image_Icon/Icon/interiorIcon.avif'
+
+
 import Service from '../service/Service';
 import './Products.css'
+
 
 const Products = () => {
     //    const [products,setProducts]= useState([])

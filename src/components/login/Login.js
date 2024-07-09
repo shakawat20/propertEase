@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSignInWithGoogle, useCreateUserWithEmailAndPassword, useUpdateProfile, useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase/firebase.init'
-import googleIcon from '../../Regal Residence/Image_Icon/Icon/Group 573.png'
+import googleIcon from '../Regal Residence/Image_Icon/Icon/Group 573.png'
 
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 

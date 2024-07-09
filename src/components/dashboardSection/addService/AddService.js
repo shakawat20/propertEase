@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import img1 from "../../../Regal Residence/Image_Icon/Icon/cloud-upload-outline 1.png"
+import img1 from "../../Regal Residence/Image_Icon/Icon/cloud-upload-outline 1.png"
 import { useForm } from 'react-hook-form';
 
 const AddService = ({ setProject }) => {

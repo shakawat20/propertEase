@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../../Regal Residence/Image_Icon/Icon/map-pin-2-fill.png'
+import img1 from '../Regal Residence/Image_Icon/Icon/map-pin-2-fill.png'
 
 const Product = ({ title, img, place }) => {
     return (

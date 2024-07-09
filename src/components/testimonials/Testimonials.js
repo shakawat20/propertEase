@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../../Regal Residence/Image_Icon/Image/17074986.jpg'
-import img2 from '../../Regal Residence/Image_Icon/Image/21960670.jpg'
-import img3 from '../../Regal Residence/Image_Icon/Image/37169361.jpg'
+import img1 from '../Regal Residence/Image_Icon/Image/17074986.jpg'
+import img2 from '../Regal Residence/Image_Icon/Image/21960670.jpg'
+import img3 from '../Regal Residence/Image_Icon/Image/37169361.jpg'
 import Testimonial from './Testimonial';
 
 const Testimonials = () => {
