@@ -29,7 +29,7 @@ const Contact = () => {
                     <input placeholder='Name' className="input border border-gray-300 w-full mb-4 bg-white" {...register("name")} />
                     <input placeholder='Email' className="input border border-gray-300 w-full mb-4 bg-white" {...register("email")} />
                     <textarea placeholder='Message' className="input border text-center pt-16 items-center border-gray-300 w-full mb-4 h-40 resize-none bg-white" {...register("message")}></textarea>
-                    <input className="block bg-white btn w-full hover:bg-white" type="submit" />
+                    <input className="block bg-white text-black btn w-full hover:bg-white" type="submit" />
                 </div>
             </form>
         </div>

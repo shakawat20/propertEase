@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import img1 from '../Regal Residence/Image_Icon/Image/pierre-chatel-innocenti-AlSlE8IAjZo-unsplash 1.png'
+import img1 from '../propertEase/Image_Icon/Image/pierre-chatel-innocenti-AlSlE8IAjZo-unsplash 1.png'
 import auth from '../../firebase/firebase.init';
 import { useAuthState, useSignOut } from 'react-firebase-hooks/auth';
 import './Header.css'

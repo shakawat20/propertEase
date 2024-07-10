@@ -3,7 +3,7 @@ import Form from '../form/Form';
 import Header from '../header/Header';
 import Products from '../products/Products';
 import Testimonials from '../testimonials/Testimonials';
-import img1 from '../Regal Residence/Image_Icon/Image/pierre-chatel.jpg'
+import img1 from '../propertEase/Image_Icon/Image/pierre-chatel.jpg'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
