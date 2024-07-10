@@ -20,13 +20,7 @@ const Residences = ({ setHome, home, project }) => {
     const [admin, adminLoading] = UseAdmin(user);
     const [afterDelete, setAfterDelete] = useState({})
 
-    if (!afterDelete) {
-        <Loading></Loading>
-    }
-    if(!residences){
-        <Loading></Loading>
-        // <span className="loading loading-spinner loading-lg"></span>
-    }
+
 
 
     useEffect(() => {
@@ -38,30 +32,37 @@ const Residences = ({ setHome, home, project }) => {
             })
     }, [home, project, afterDelete])
 
+    if (!afterDelete) {
+        <Loading></Loading>
+    }
+    if (!residences) {
+        <Loading></Loading>
+        // <span className="loading loading-spinner loading-lg"></span>
+    }
 
     return (
         <div>
-              <ToastContainer  theme="dark"/>
-        
-
-        <div style={{ marginLeft: "35px" }} className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
-           
-            {
-                residences.map(residence =>
-                    <Residence setHome={setHome} key={residence._id} residence={residence} setDeleteResidence={setDeleteResidence} admin={admin} ></Residence>
-                )
-            }
+            <ToastContainer theme="dark" />
 
 
+            <div style={{ marginLeft: "35px" }} className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
 
-            {
-                admin && !adminLoading ? (<ModalForDelete deleteResidence={deleteResidence} setAfterDelete={setAfterDelete}></ModalForDelete>) : (<Modal home={home}></Modal>)
-            }
+                {
+                    residences.map(residence =>
+                        <Residence setHome={setHome} key={residence._id} residence={residence} setDeleteResidence={setDeleteResidence} admin={admin} ></Residence>
+                    )
+                }
 
 
 
+                {
+                    admin && !adminLoading ? (<ModalForDelete deleteResidence={deleteResidence} setAfterDelete={setAfterDelete}></ModalForDelete>) : (<Modal home={home}></Modal>)
+                }
 
-        </div>
+
+
+
+            </div>
         </div>
 
     );

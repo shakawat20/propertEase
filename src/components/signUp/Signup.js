@@ -129,7 +129,7 @@ const Signup = () => {
 
                 {errors.exampleRequired && <span>This field is required</span>}
 
-                <input className='btn text-black-600 bg-white hover:bg-white' type="submit" />
+                <input style={{color:"black"}} className='btn  bg-white hover:bg-white' type="submit" />
             </form>
         </div>
 

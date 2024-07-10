@@ -3,7 +3,7 @@ import React from 'react';
 const Loading = () => {
     return (
        
-       <div>
+       <div style={{backgroundColor:"red"}}>
         loading ....
        </div>
 
