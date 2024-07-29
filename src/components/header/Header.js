@@ -35,7 +35,7 @@ const Header = () => {
 
 
     return (
-        <div   style={{ marginLeft: "20px", marginRight: "20px" ,position:"sticky",top:0,zIndex:100,color:"black" }}>
+        <div  className='bg-[#DDE3E9]'  style={{ position:"sticky",top:0,zIndex:100,color:"black" }}>
             <div className="navbar ">
                 <div className="navbar-start">
                     <div className="dropdown">
