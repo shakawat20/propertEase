@@ -92,10 +92,10 @@ const Products = () => {
                 }
 
             </div>
-            <div className='bg-red-[#121314] ' style={{width:"100%"}}>
+            <div className='bg-red-[#121314] ' style={{width:"100%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: 'center' ,width:"100%"}}>
                     <h1 className='font-bold text-3xl' style={{ textAlign: "center", marginTop: "45px" }}>We're an agency tailored to all <br /> client's needs that always delivers </h1>
-                    <div className="grid lg:grid-cols-3 justify-between md:grid-cols-2 service" style={{ marginTop: "20px", marginLeft: "65px",width:"100%" }}>
+                    <div className="grid lg:grid-cols-3 justify-items-center md:grid-cols-2 service" style={{ marginTop: "20px",width:"100%" }}>
 
                         {
                             services.map(data => <Service img={data.img} title={data.title} description={data.description} price={data.price} id={data.id}></Service>)

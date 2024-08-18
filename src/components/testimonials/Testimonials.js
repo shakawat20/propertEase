@@ -30,9 +30,9 @@ const Testimonials = () => {
 
     ]
     return (
-        <div className='flex flex-col  justify-center items-center bg-white '>
+        <div className='flex flex-col  justify-center items-center bg-white ' style={{width:"100%"}}>
             <h1 style={{textAlign:"center",fontSize:"40px",marginTop:"10px",marginBottom:"20px",fontWeight:"bold"} }>Testimonials</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" style={{marginTop:"20px"}}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center" style={{marginTop:"20px",width:"100%"}}>
                 {
                     testimonials.map(data => <Testimonial img={data.img1} name={data.Name} title={data.title} description={data.description}></Testimonial>)
                 }
