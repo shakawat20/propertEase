@@ -18,12 +18,12 @@ const Home = () => {
                         src={img1} alt='hi'
                         className="w-[600px] rounded-lg shadow-2xl" />
                     <div className='w-100'>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
+                        <h1 className="text-5xl font-bold">Find Your Dream Property Today</h1>
                         <p className="py-6">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        Explore the best properties available for sale in prime locations! Whether you're looking for a dream home or a smart investment, 
+                        we bring you a wide range of options to suit your needs. Find detailed listings, virtual tours, and expert advice to help you make the right decision.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn btn-primary"><Link to='/residences'>Get Started</Link> </button>
                     </div>
                 </div>
             </div>

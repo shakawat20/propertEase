@@ -11,17 +11,17 @@ const Dashboard = () => {
     const [admin, adminLoading] = UseAdmin(user)
 
     return (
-        <div style={{ border: "4px solid gray",backgroundColor:"white" }}>
+        <div style={{ border: "1px solid gray",backgroundColor:"white" }}>
             <div className="drawer drawer-mobile">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content flex flex-col " style={{ border: "4px solid black",backgroundColor:"white" }}>
+                <div className="drawer-content flex flex-col " style={{ border: "1px solid black",backgroundColor:"white" }}>
                     {/* Page content here  */}
                     <Outlet></Outlet>
 
                     <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
                 </div>
-                <div className="drawer-side" style={{ border: "4px solid black" }}>
+                <div className="drawer-side" style={{ border: "1px solid black" }}>
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-80 bg-white  text-black">
                         {!user ? (
@@ -30,7 +30,7 @@ const Dashboard = () => {
                             <>
                                 {admin && (
                                     <>
-                                        <li><Link to="/dashboard">Order list</Link></li>
+                                        <li ><Link to="/dashboard">Order list</Link></li>
                                         <li><Link to="/dashboard/addService">Add service</Link></li>
                                         <li><Link to="/dashboard/addAdmin">Add admin</Link></li>
                                     </>

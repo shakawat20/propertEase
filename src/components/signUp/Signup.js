@@ -99,28 +99,28 @@ const Signup = () => {
     return (
         <div className='text-black'>
             <h1 style={{ textAlign: "center", marginTop: "10px", marginBottom: "5px" }}>Sign Up</h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} className='text-black'>
                 <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
-                    <label className=' text-black'  htmlFor="firstName">First Name:</label>
-                    <input id='firstName' style={{border:"2px solid black"}} className='bg-white border-rounded' placeholder='First lllName'  {...register("FirstName")} />
+                    <label className='text-black'  htmlFor="firstName">First Name:</label>
+                    <input id='firstName' style={{border:"1px solid black"}} className='bg-white border-rounded' placeholder='First lllName'  {...register("FirstName")} />
                 </div>
-                <div className='bg-white text-white' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
-                    <label className=' text-black'  htmlFor="lastName"> <span>Last Name:</span></label>
-                    <input id='lastName' style={{border:"2px solid black"}} className='bg-white ' placeholder='Last Name' {...register("LastName")} />
+                <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
+                    <label className='text-black'  htmlFor="lastName"> <span>Last Name:</span></label>
+                    <input id='lastName' style={{border:"1px solid black"}} className='bg-white ' placeholder='Last Name' {...register("LastName")} />
                 </div>
 
-                <div className='bg-white text-white' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
+                <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
                     <label className=' text-black' htmlFor="email"> <span>Email:</span> </label>
-                    <input id='email' className='bg-white' style={{border:"2px solid black"}} placeholder='Username or Email' {...register("email")} />
+                    <input id='email' className='bg-white' style={{border:"1px solid black"}} placeholder='Username or Email' {...register("email")} />
                 </div>
 
                 <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
                     <label  htmlFor="password"> <span>Password:</span></label>
-                    <input id='password' className='bg-white text-black border-2px' style={{border:"2px solid black"}} placeholder='Password' {...register("password")} />
+                    <input id='password' className='bg-white text-black border-2px' style={{border:"1px solid black"}} placeholder='Password' {...register("password")} />
                 </div>
                 <div className='bg-white text-black ' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
                     <label htmlFor="confirmPassword"> <span>Confirm Password:</span> </label>
-                    <input id='confirmPassword' className='bg-white ' style={{border:"2px solid black"}}  placeholder='Confirm Password' {...register("confirmPassword")} />
+                    <input id='confirmPassword' className='bg-white ' style={{border:"1px solid black"}}  placeholder='Confirm Password' {...register("confirmPassword")} />
                 </div>
 
 
@@ -128,8 +128,11 @@ const Signup = () => {
 
 
                 {errors.exampleRequired && <span>This field is required</span>}
+                <div className='mt-10'>
+                   <input style={{color:"black",width:"200px"}} className='btn  bg-white hover:bg-white' type="submit" /> 
+                </div>
 
-                <input style={{color:"black"}} className='btn  bg-white hover:bg-white' type="submit" />
+                
             </form>
         </div>
 

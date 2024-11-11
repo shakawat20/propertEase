@@ -40,7 +40,7 @@ const Orders = ({ home }) => {
                 <table className="table w-full">
                     {/* head*/}
                     <thead >
-                        <tr>
+                        <tr style={{color:"black"}}>
                             <th>No</th>
                             <th>Name</th>
                             <th>Email Id</th>

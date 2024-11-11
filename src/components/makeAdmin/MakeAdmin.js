@@ -13,9 +13,6 @@ const MakeAdmin = () => {
 
                 headers: {
                     'Content-Type': 'application/json'
-
-
-
                 },
 
 
@@ -28,11 +25,11 @@ const MakeAdmin = () => {
     };
 
     return (
-        <div style={{position:"relative",left:'-250px',top:"60px"}}> 
-            <div style={{textAlign:"center" }}>Make Admin</div>
+        <div style={{position:"relative",left:'-250px',top:"60px",color:"black" ,display:'flex',justifyContent:"center",alignItems:"center"}}> 
+           
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input type='email' {...register("email")} />
-                <input type="submit" />
+               <div>Make Admin</div>  <input style={{border:"1px solid black"}} placeholder='Email' type='email' {...register("email")} />
+                <input style={{border:"1px solid black"}} type="submit" />
 
             </form>
 

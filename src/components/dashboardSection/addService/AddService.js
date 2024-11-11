@@ -77,16 +77,16 @@ const AddService = ({ setProject }) => {
 
 
     return (
-        <div style={{ marginLeft: "-90px", marginTop: "-40px" }} >
+        <div style={{ marginLeft: "-90px", marginTop: "-40px",color:"black" }} >
             <div style={{ marginLeft: "130px", marginTop: '90px' }}>Add a project</div>
             <form onSubmit={handleSubmit(onSubmit)} style={{ maxWidth: '400px', margin: '0 auto', position: 'relative', left: "-200px", top: "40px" }}>
                 <div style={{ marginBottom: '10px', display: "flex", alignItems: "center", }}>
                     <div>
-                        <label htmlFor="title" style={{ display: 'block', marginBottom: '5px' }}>
+                        <label htmlFor="title" style={{ display: 'block', marginBottom: '5px',color:"black" }}>
                             Service Title:
                         </label>
                         <input
-                            style={{ width: '200px', padding: '5px', height: "27px" }}
+                            style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" }}
                             type="text" id="title" {...register('title')}
                         />
                     </div>
@@ -103,7 +103,7 @@ const AddService = ({ setProject }) => {
                             </label>
 
                         </div>
-                        <input type="file" accept="image/*" id="file" {...register('file')} style={{ display: "none" }} />
+                        <input type="file" accept="image/*" id="file" {...register('file')} style={{ display: "none",border:"1px solid black" }} />
                     </div>
 
                 </div>
@@ -113,7 +113,7 @@ const AddService = ({ setProject }) => {
                         size:
                     </label>
                     <input
-                        style={{ width: '200px', padding: '5px', height: "27px" }}
+                        style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" }}
                         type="text" id="size" {...register('size')}
                     />
                 </div>
@@ -122,7 +122,7 @@ const AddService = ({ setProject }) => {
                         price
                     </label>
                     <input
-                        style={{ width: '200px', padding: '5px', height: "27px" }}
+                        style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" }}
                         type="text" id="price" {...register('price')}
                     />
                 </div>
@@ -137,7 +137,7 @@ const AddService = ({ setProject }) => {
 
                         type="text"
                         id="layout" {...register('layout')}
-                        style={{ width: '100%', padding: '5px', borderRadius: "5px" }}
+                        style={{ width: '100%', padding: '5px', borderRadius: "5px" ,border:"1px solid black"}}
                     />
                 </div>
 

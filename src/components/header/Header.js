@@ -20,9 +20,9 @@ const Header = () => {
     const list = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/residences">Projects</Link></li>
-        {!admin && <li><Link to="/dashboard">My orders</Link></li>}
+        {!admin && <li><Link to="/dashboard">My Orders</Link></li>}
         <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/about">About Us</Link></li>
+        <li><Link to="/about">About us</Link></li>
 
         {admin && <li><Link to="/dashboard">admin</Link></li>}
         

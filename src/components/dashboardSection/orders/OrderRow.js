@@ -20,8 +20,8 @@ const OrderRow = ({ booking, setRemoved,index }) => {
     return (
 
 
-        <tr>
-            <th>{index + 1}</th>
+        <tr style={{color:"black"}}>
+            <th style={{color:"black"}}>{index + 1}</th>
             <td>{booking.name}</td>
             <td >{booking.email}</td>
             <td>{booking.type}</td>
