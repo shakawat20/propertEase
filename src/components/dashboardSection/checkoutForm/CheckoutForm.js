@@ -82,7 +82,7 @@ const CheckoutForm = ({ clientSecret, info, setSuccess, success, setTransaction,
   };
 
   return (
-    
+
     <div className='bg-white'>
       <form className='bg-white' onSubmit={handleSubmit}>
         <div style={{
@@ -108,8 +108,13 @@ const CheckoutForm = ({ clientSecret, info, setSuccess, success, setTransaction,
         </div>
 
 
-        <button type="submit" className="btn bg-white text-black border" style={{border:"2px solid black"}} disabled={!stripe || !elements}>
-          confirm
+        <button
+          type="submit"
+          className="btn bg-white text-black border border-black hover:text-white hover:bg-black active:text-white active:bg-gray-800"
+          style={{border:"2px solid black"}}
+          disabled={!stripe || !elements}
+        >
+          Confirm
         </button>
         {errorMessage && <div>{cardError}</div>}
       </form>

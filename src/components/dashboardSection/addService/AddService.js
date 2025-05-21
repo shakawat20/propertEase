@@ -86,7 +86,7 @@ const AddService = ({ setProject }) => {
                             Service Title:
                         </label>
                         <input
-                            style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" }}
+                            style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" ,backgroundColor:"white"}}
                             type="text" id="title" {...register('title')}
                         />
                     </div>
@@ -103,7 +103,7 @@ const AddService = ({ setProject }) => {
                             </label>
 
                         </div>
-                        <input type="file" accept="image/*" id="file" {...register('file')} style={{ display: "none",border:"1px solid black" }} />
+                        <input type="file" accept="image/*" id="file" {...register('file')} style={{ display: "none",border:"1px solid black",backgroundColor:"white" }} />
                     </div>
 
                 </div>
@@ -113,7 +113,7 @@ const AddService = ({ setProject }) => {
                         size:
                     </label>
                     <input
-                        style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" }}
+                        style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" ,backgroundColor:"white"}}
                         type="text" id="size" {...register('size')}
                     />
                 </div>
@@ -122,7 +122,7 @@ const AddService = ({ setProject }) => {
                         price
                     </label>
                     <input
-                        style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" }}
+                        style={{ width: '200px', padding: '5px', height: "27px",border:"1px solid black" ,backgroundColor:"white"}}
                         type="text" id="price" {...register('price')}
                     />
                 </div>
@@ -137,11 +137,11 @@ const AddService = ({ setProject }) => {
 
                         type="text"
                         id="layout" {...register('layout')}
-                        style={{ width: '100%', padding: '5px', borderRadius: "5px" ,border:"1px solid black"}}
+                        style={{ width: '100%', padding: '5px', borderRadius: "5px" ,border:"1px solid black",backgroundColor:"white"}}
                     />
                 </div>
 
-                <button type="submit" style={{ padding: '10px 20px', background: 'blue', color: 'white', border: 'none', borderRadius: "5px", marginTop: "40px" }}>
+                <button type="submit" style={{ padding: '10px 20px', background: 'black', color: 'white', border: 'none', borderRadius: "5px", marginTop: "40px" }}>
                     Submit
                 </button>
             </form>

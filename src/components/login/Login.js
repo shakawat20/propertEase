@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSignInWithGoogle, useCreateUserWithEmailAndPassword, useUpdateProfile, useAuthState } from 'react-firebase-hooks/auth';
+import { useSignInWithGoogle, useCreateUserWithEmailAndPassword, useUpdateProfile, useAuthState,useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase/firebase.init'
 import googleIcon from '../propertEase/Image_Icon/Icon/Group 573.png'
@@ -8,6 +8,27 @@ import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 import { useLocation } from 'react-router-dom';
 const Login = () => {
+
+  console.log("my name is login")
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+
+        console.log('Email:', email);
+        console.log('Password:', password);
+        // localStorage.setItem('user', gUser?.email)
+
+
+
+
+    };
+
     const location = useLocation();
     console.log(location)
     const navigate = useNavigate()
@@ -30,8 +51,7 @@ const Login = () => {
 
 
         signInWithPopup(auth, provider)
-            .then((result) =>
-             {
+            .then((result) => {
 
                 // This gives you a Google Access Token. You can use it to access the Google API.
                 // const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -58,7 +78,7 @@ const Login = () => {
                     .then(res => res.json())
                     .then(data => {
                         localStorage.setItem('Token', data.token)
-                       
+console.log("local storage")
 
                     })
 
@@ -72,14 +92,14 @@ const Login = () => {
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log("apollo",data)
-                        if(from){
+                        console.log("apollo", data)
+                        if (from) {
                             navigate(from)
                         }
-                        if(!from){
+                        if (!from) {
                             navigate('/')
                         }
-                        
+
                     })
 
 
@@ -164,21 +184,80 @@ const Login = () => {
 
 
     return (
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", border: "1px solid gray", height: "500px" }}>
+        <div
+        style={{
+         
+  
+        }}>
+        <div className="min-h-screen flex items-center justify-center  ">
+  
+          <div className="bg-white white p-8 rounded shadow-md w-96" style={{border:'1px solid black'}}>
+            <h2 className="text-2xl font-semibold mb-4 black" >Login</h2>
+            <form onSubmit={handleLogin}>
+              <div className="mb-4 ">
+                <label htmlFor="email" className="block text-gray-700"style={{width:"90px"}}>Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300"
+                  required
+                  style={{border:"1px solid gray"}}
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="password" className="block text-gray-700" style={{width:"90px"}}>Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring focus:border-blue-300"
+                  required
+                  style={{border:"1px solid gray"}}
+                  
 
-
-            <div style={{ padding: "5px", borderRadius: "4px", position: "relative", top: "-50px" }}>
-                <h1 style={{ textAlign: "center", marginBottom: "10px", fontSize: "30px" }}>LogIn with Google</h1>
-                <div style={style}>
-                    <img src={googleIcon} style={{ height: "20px", width: "20px", display: "inline" }} alt="" />
-                    <button style={{ paddingRight: "35px",color:"black" }} onClick={signIn}>signInWithGoogle</button>
-                </div>
-
+                />
+              </div>
+              <div className='flex justify-center'>
+                <button onClick={() => signInWithEmailAndPassword(email, password)}
+                  type="submit"
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring focus:border-blue-300"
+                  style={{border:"1px solid gray"}}
+                >
+                  Login
+                </button>
+              </div>
+  
+            </form>
+  
+            <div className='flex flex-col justify-center items-center'>
+              <span>
+                or
+              </span>
+              <br />
+              <button onClick={() => signIn()} type="submit" className="border rounded border-blue text-black py-2 px-4" style={{border:"1px solid gray"}}>
+                signInWithGoogle
+              </button>
+              <br />
+  
+              <span>
+                or
+              </span>
+              <Link to='/signup'>
+                <button type="submit" className="border  rounded border-blue text-gray py-2 px-4" style={{color:"black",border:"2px solid gray"}}>
+                  create account
+                </button>
+              </Link>
             </div>
-            <div style={{ textAlign: "center" }}>or</div>
-            <Link className=' btn  bg-white text-black hover:bg-white' to="/signup">create an account</Link>
-
+  
+          </div>
         </div>
+      </div>
+ 
 
 
     );

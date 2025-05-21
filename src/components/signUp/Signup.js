@@ -102,7 +102,7 @@ const Signup = () => {
             <form onSubmit={handleSubmit(onSubmit)} className='text-black'>
                 <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
                     <label className='text-black'  htmlFor="firstName">First Name:</label>
-                    <input id='firstName' style={{border:"1px solid black"}} className='bg-white border-rounded' placeholder='First lllName'  {...register("FirstName")} />
+                    <input id='firstName' style={{border:"1px solid black"}} className='bg-white border-rounded' placeholder='First Name'  {...register("FirstName")} />
                 </div>
                 <div className='bg-white text-black' style={{width:"30%",display:'flex',justifyContent:"space-between"}}>
                     <label className='text-black'  htmlFor="lastName"> <span>Last Name:</span></label>

@@ -41,14 +41,14 @@ const Orders = ({ home }) => {
                     {/* head*/}
                     <thead >
                         <tr style={{color:"black"}}>
-                            <th>No</th>
-                            <th>Name</th>
-                            <th>Email Id</th>
-                            <th>Service</th>
+                            <th style={{backgroundColor:'white'}}>No</th>
+                            <th style={{backgroundColor:'white'}} >Name</th>
+                            <th style={{backgroundColor:'white'}}>Email Id</th>
+                            <th style={{backgroundColor:'white'}}>Service</th>
 
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         {/* row 1 */}
                         {
                             bookings.map((booking, index) =>

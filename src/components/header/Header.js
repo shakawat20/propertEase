@@ -24,7 +24,7 @@ const Header = () => {
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/about">About us</Link></li>
 
-        {admin && <li><Link to="/dashboard">admin</Link></li>}
+        {admin && <li><Link to="/dashboard">Admin</Link></li>}
         
     </>
     const logOut = () => {

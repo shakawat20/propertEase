@@ -14,6 +14,7 @@ import { useNavigate } from 'react-router-dom';
 const MyBookings = () => {
 
     const [user, floading, ferror] = useAuthState(auth);
+    console.log("my bookings",user)
     const [myBookings, setMyBookings] = useState([])
     const [event, setEvent] = useState()
     const [info,setInfo]=useState({})
@@ -37,8 +38,9 @@ const MyBookings = () => {
             )
                 .then(res => {
                     if (res.status === 401 || res.status === 403) {
-                        signOut()
-                        navigate('/')
+                        // signOut()
+                        // navigate('/')
+                        console.log("respons",res.status)
 
                     }
                     else {
@@ -86,10 +88,10 @@ const MyBookings = () => {
 
     console.log(info)
 
-    if(!myBookings){
-        console.log("hope is fucked up")
-       return <div>hope is nothing</div>
-    }
+    // if(!myBookings){
+    //     console.log("hope is ")
+    //    return <div>hope is nothing</div>
+    // }
 
 
     return (

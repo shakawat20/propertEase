@@ -17,11 +17,12 @@ const Contact = () => {
                         </div>
                         <div className='flex items-center mb-4'>
                             <i className={`fa-solid fa-envelope pr-4`}></i>
+                            
                             <h1>shakawat.cse20@gmail.com</h1>
                         </div>
                         <div className='flex items-center'>
                             <i className="fa-sharp fa-solid fa-phone pr-4"></i>
-                            <h1>+8801609431059</h1>
+                            <h1>+880 1716531005</h1>
                         </div>
                     </div>
                 </div>

@@ -21,11 +21,11 @@ const OrderRow = ({ booking, setRemoved,index }) => {
 
 
         <tr style={{color:"black"}}>
-            <th style={{color:"black"}}>{index + 1}</th>
-            <td>{booking.name}</td>
-            <td >{booking.email}</td>
-            <td>{booking.type}</td>
-            <td><button className='btn' onClick={()=>{
+            <th style={{color:"black",backgroundColor:"white"}}>{index + 1}</th>
+            <td  style={{color:"black",backgroundColor:"white"}}>{booking.name}</td>
+            <td  style={{color:"black",backgroundColor:"white"}}>{booking.email}</td>
+            <td style={{color:"black",backgroundColor:"white"}}>{booking.type}</td>
+            <td  style={{backgroundColor:"white"}}><button className='btn' style={{color:"white"}} onClick={()=>{
                 
                 
                 handleRemove(booking._id)

@@ -28,8 +28,8 @@ const MakeAdmin = () => {
         <div style={{position:"relative",left:'-250px',top:"60px",color:"black" ,display:'flex',justifyContent:"center",alignItems:"center"}}> 
            
             <form onSubmit={handleSubmit(onSubmit)}>
-               <div>Make Admin</div>  <input style={{border:"1px solid black"}} placeholder='Email' type='email' {...register("email")} />
-                <input style={{border:"1px solid black"}} type="submit" />
+               <div>Make Admin</div>  <input style={{border:"1px solid black",backgroundColor:"white",color:"black"}} placeholder='Email' type='email' {...register("email")} />
+                <input style={{border:"1px solid black",backgroundColor:"black",color:"white"}} type="submit" />
 
             </form>
 
